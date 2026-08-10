@@ -1,137 +1,82 @@
-Salesforce Developer Bridge Program – Day 1
+# Salesforce Developer Bridge Program – Day 1
 
-Project Overview
+## Project Overview
 
-This project was completed as part of the Salesforce Developer Bridge Program to strengthen core Salesforce development skills.
+This project was completed as part of the **Salesforce Developer Bridge Program** to strengthen fundamental Salesforce development skills.
 
-The implementation covered the complete development lifecycle, including data modeling, Apex programming, SOQL, Triggers, Trigger Handlers, and Lightning Web Components.
+The implementation covers the development lifecycle from **data modeling and Apex programming to SOQL, Triggers, Trigger Handlers, and Lightning Web Components (LWC).**
 
-Technologies Used
+---
 
-Salesforce CRM
+## Technologies Used
 
-Apex
+- Salesforce CRM
+- Apex
+- SOQL
+- Apex Triggers
+- Lightning Web Components (LWC)
+- Developer Console
+- Trailhead Playground
 
-SOQL
+---
 
-Apex Triggers
+## Tasks Completed
 
-Lightning Web Components (LWC)
+### Block 1 – Data Modeling
 
-Developer Console
+Implemented a custom Salesforce data model with:
 
-Trailhead Playground
+- Custom Objects
+- Relationship Fields
+- Sample Records
 
-Tasks Completed
+**Concepts Practiced:**
 
-Block 1 – Data Modeling
+- Lookup Relationships
+- Master-Detail Relationships
 
-Implemented a custom data model including:
+---
 
-Custom Objects
+### Block 2 – Apex Basics
 
-Relationship Fields
+Practiced fundamental Apex development concepts:
 
-Sample Data
+- Apex Classes
+- Variables
+- Methods
+- Execute Anonymous
+- Debug Logs
 
-Concepts:
+---
 
-Lookup Relationships
+### Block 3 – SOQL
 
-Master-Detail Relationships
+Implemented SOQL queries using:
 
-Block 2 – Apex Basics
+- `WHERE`
+- `ORDER BY`
+- `LIMIT`
+- Relationship Queries
+- Aggregate Functions
+- Comparison Operators
 
-Practiced:
+---
 
-Apex Classes
+### Block 4 – Apex Triggers
 
-Variables
+Implemented Apex Triggers for different record events:
 
-Methods
+- Before Insert Trigger
+- After Update Trigger
+- Trigger Handler Pattern
 
-Execute Anonymous
+**Architecture:**
 
-Debug Logs
-
-Block 3 – SOQL
-
-Implemented queries using:
-
-WHERE
-
-ORDER BY
-
-LIMIT
-
-Relationship Queries
-
-Aggregate Functions
-
-Comparison Operators
-
-Block 4 – Apex Trigger
-
-Implemented:
-
-Before Insert Trigger
-
-After Update Trigger
-
-Trigger Handler Pattern
-
-Architecture:
-
+```text
 Trigger
-    │
-    ▼
+   │
+   ▼
 Trigger Handler
-    │
-    ▼
+   │
+   ▼
 Business Logic
-
-Block 5 – Lightning Web Components
-
-Created an LWC component that displays records using @wire and deployed it successfully using Lightning App Builder.
-
-Skills Practiced
-
-Data Modeling
-
-Apex Programming
-
-SOQL
-
-Trigger Development
-
-Trigger Handler Pattern
-
-LWC Development
-
-Learning Outcomes
-
-After completing Day 1, the following concepts were understood:
-
-How Salesforce stores business data.
-
-How Apex implements business logic.
-
-How SOQL retrieves data efficiently.
-
-How Triggers automate business events.
-
-Why Handler classes improve maintainability.
-
-How LWC builds responsive Salesforce interfaces.
-
-Best Practices Followed
-
-One Trigger per Object.
-
-Separate business logic from Triggers.
-
-Reusable Handler classes.
-
-Clean code structure.
-
-Modular application design.
