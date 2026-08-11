@@ -1,0 +1,39 @@
+<template>
+
+    <lightning-card title="Student Profile">
+
+        <lightning-record-edit-form
+            record-id={recordId}
+            object-api-name="Student__c"
+            onsuccess={handleSuccess}
+            onerror={handleError}>
+
+            <lightning-messages></lightning-messages>
+
+            <lightning-input-field
+                field-name="Email__c">
+            </lightning-input-field>
+
+            <lightning-input-field
+                field-name="Phone__c">
+            </lightning-input-field>
+
+            <lightning-input-field
+                field-name="Branch__c">
+            </lightning-input-field>
+
+            <lightning-input-field
+                field-name="CGPA__c">
+            </lightning-input-field>
+
+            <lightning-button
+                type="submit"
+                label="Save"
+                variant="brand">
+            </lightning-button>
+
+        </lightning-record-edit-form>
+
+    </lightning-card>
+
+</template>
