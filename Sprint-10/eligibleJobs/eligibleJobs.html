@@ -1,0 +1,53 @@
+<template>
+  
+    <lightning-card title="Eligible Jobs">
+        <div class="slds-p-around_medium">
+            <!-- Job 1 -->
+            <div class="slds-box slds-m-bottom_medium">
+                <h2 class="slds-text-heading_medium">
+                    {jobRole}
+                </h2>
+
+                <p>Company: {companyName}</p>
+                <p>Package: {packageOffered}</p>
+                <p>Location: {location}</p>
+                <p>Deadline: {deadline}</p>
+                <br>
+              
+                <lightning-button
+                    label="View Details"
+                    variant="brand"
+                    onclick={handleViewDetails}>
+                </lightning-button>
+
+                <lightning-button
+                    label="Apply"
+                    class="slds-m-left_small"
+                    onclick={handleApply}>
+                </lightning-button>
+              
+            </div>
+          
+            <!-- Details -->
+            <template if:true={showDetails}>
+              
+                <div class="slds-box">
+                    <h2 class="slds-text-heading_small">
+                        Job Details
+                    </h2>
+                    <p>
+                        You selected {jobRole} at {companyName}.
+                    </p>
+                </div>
+            </template>
+          
+            <!-- Success Message -->
+            <template if:true={showSuccess}>
+                <div class="slds-text-color_success slds-m-top_medium">
+                    Application submitted successfully!
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+
+</template>
