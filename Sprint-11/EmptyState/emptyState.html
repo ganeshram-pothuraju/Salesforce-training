@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title={title}>
+        <p class="slds-p-around_medium">
+            {message}
+        </p>
+
+        <template if:true={actionLabel}>
+            <lightning-button
+                label={actionLabel}
+                onclick={handleAction}>
+            </lightning-button>
+        </template>
+    </lightning-card>
+</template>
