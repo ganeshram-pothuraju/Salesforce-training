@@ -1,0 +1,12 @@
+trigger ApplicationTrigger on Application__c (before insert,after update) {
+    if(Trigger.isBefore && Trigger.isInsert)
+    {
+		PlacementApplicationService.validateApplications(Trigger.new);
+	}
+    if(Trigger.isAfter && Trigger.isUpdate){
+        System.debug('Trigger reached NotificationService');
+        StatisticsService.updatePlacementStatistics(Trigger.new,Trigger.oldMap);
+        NotificationService.sendNotifications(Trigger.new,Trigger.oldMap);
+    }
+    
+}
